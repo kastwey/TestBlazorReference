@@ -1,0 +1,16 @@
+﻿<h3>Grid</h3>
+<table>
+	<caption>Test table to capture component references</caption>
+	<thead>
+		<tr>
+		<th>ID</th>
+		<th>Nuber</th>
+	</tr>
+		</thead>
+	<tbody>
+@foreach (var row in _items)
+{
+<GridRow Model="@row.Model" @ref="row.Row"></GridRow>
+}
+</tbody>
+</table>

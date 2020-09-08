@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<ul>
+	<li><button @onclick="RenderGrid1">Render grid 1</button></li>
+	<li><button @onclick="RenderGrid2">Render grid 2</button></li>
+</ul>
+@if (_gridRows != null)
+{
+
+	<Grid GridRows="_gridRows" />
+}
