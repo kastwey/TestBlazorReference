@@ -10,7 +10,7 @@
 	<tbody>
 @foreach (var row in _items)
 {
-<GridRow Model="@row.Model" @ref="row.Row"></GridRow>
+<GridRow Model="@row.Model" @ref="row.Row" @key="@row.Model.Id"></GridRow>
 }
 </tbody>
 </table>
